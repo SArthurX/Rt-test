@@ -1,6 +1,9 @@
-<script type="text/babel">
-    ReactDOM.render(
-        <h1>Hello World!</h1>,
-        document.getElementById('app')
+class Hello extends React.Component{
+    render(){
+        return <h1>Hello {this.props.name}</h1>;
+    }
+}
+ReactDOM.render(
+    <Hello name="saxon"/>,
+    document.getElementById('app')
     );
-</script>
